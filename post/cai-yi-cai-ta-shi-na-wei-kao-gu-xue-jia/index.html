@@ -30,29 +30,9 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            为之，则难者亦易矣！
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
+          <div class="toc-container hidden lg:block">
             
           </div>
         </div>
@@ -103,38 +83,88 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="ri-archive-line"></i> 文章归档
-        </h2>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">猜一猜他是哪位考古学家？</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-05-27 / 1 min read
+        </div>
+        
+          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://52wbstudy.github.io/post-images/cai-yi-cai-ta-shi-na-wei-kao-gu-xue-jia.png" alt="">
+        
+        <div class="post-content yue">
+          <section class="_jpmeditor" style="border: 0px;">
+    <section class="_jpmeditor" style="border: 2px dashed rgb(150, 0, 95);">
+        <p style="text-align: center;">
+            猜猜他是谁？
+        </p>
+        <section>
+            <svg style="margin-bottom: 50px;display: block;background-image: url(&quot;https://www.jianpanmiao.com/upload/5131/20200527/68abc6bc3e9b2687a77e8cce08e422c8.jpg&quot;);background-size: 100% 100%;" viewbox="0 0 750 1037">
+                <image x="36" y="330" width="329" height="329" href="https://www.jianpanmiao.com/upload/5131/20200527/32f74e7e00a68ef73ff139247fe4359d.jpg">
+                    <animate attributename="opacity" begin="click" dur="500ms" values="1;0" restart="never" fill="freeze"></animate>
+                </image>
+                <image x="386" y="330" width="329" height="329" href="https://www.jianpanmiao.com/upload/5131/20200527/0586d3f05e8e68077bccf061deca2261.jpg">
+                    <animate attributename="opacity" begin="click" dur="500ms" values="1;0" restart="never" fill="freeze"></animate>
+                </image>
+                <image x="36" y="679" width="329" height="329" href="https://www.jianpanmiao.com/upload/5131/20200527/30c1a3dc462c39fdd3fd03d8c7a4e8c5.jpg">
+                    <animate attributename="opacity" begin="click" dur="500ms" values="1;0" restart="never" fill="freeze"></animate>
+                </image>
+                <image x="386" y="679" width="329" height="329" href="https://www.jianpanmiao.com/upload/5131/20200527/b0636c2fbf5c4056962bfc552f0303e4.jpg">
+                    <animate attributename="opacity" begin="click" dur="500ms" values="1;0" restart="never" fill="freeze"></animate>
+                </image>
+            </svg>
+        </section>
+        <p>
+            <br/>
+        </p>
+    </section>
+</section>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<!-- more -->
+
+        </div>
+
         
 
-        <div class="archives-container">
+
+        <div class="flex justify-between py-8">
           
-            <h2 class="text-gray-600 py-4 animated fadeIn">
-              <i class="ri-map-pin-time-line"></i>
-              2018
-            </h2>
-            
-              
-                <a href="https://52wbstudy.github.io/post/hello-gridea/" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Hello Gridea
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2018-12-12</div>
-              
-            
+
           
         </div>
 
-        <div>
-          <div class="pagination-container animated fadeIn">
-  
-  
-</div>
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-        </div>
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '889cef1f9f65933aa204',
+    clientSecret: 'bff9c7a744bf3e3566be39ca9d8eabfb4f088e72',
+    repo: '52wbstudy.github.io',
+    owner: '52wbstudy',
+    admin: ['52wbstudy'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
       </div>
     </div>
 

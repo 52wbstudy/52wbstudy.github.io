@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>文博 Study</title>
 <meta name="description" content="为之，则难者亦易矣！" />
-<link rel="shortcut icon" href="https://52wbstudy.github.io/favicon.ico?v=1590210339874">
+<link rel="shortcut icon" href="https://52wbstudy.github.io/favicon.ico?v=1590561587810">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -23,7 +23,7 @@
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
         <a href="https://52wbstudy.github.io">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://52wbstudy.github.io/images/avatar.png?v=1590210339874" alt="">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://52wbstudy.github.io/images/avatar.png?v=1590561587810" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">文博 Study</h1>
       </div>
@@ -79,6 +79,12 @@
         </a>
       
     
+      
+        <a href="https://52wbstudy.github.io/archives" class="menu" style="animation-delay: 0.8s" target="_blank">
+          文博学习日记
+        </a>
+      
+    
   </div>
   <div class="site-footer">
     <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
@@ -113,6 +119,32 @@
           
         </div>
 
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '889cef1f9f65933aa204',
+    clientSecret: 'bff9c7a744bf3e3566be39ca9d8eabfb4f088e72',
+    repo: '52wbstudy.github.io',
+    owner: '52wbstudy',
+    admin: ['52wbstudy'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
 
       </div>
